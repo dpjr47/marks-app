@@ -22,3 +22,19 @@ table{
 td,th{
     border: 1px solid black;
 }
+
+.individual-input{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+}
+
+.individual-input label{
+    width: 15rem;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.individual-input input{
+    width: 14rem;
+}
