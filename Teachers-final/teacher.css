@@ -189,7 +189,7 @@ nav .profile-details .admin_name{
 .selection input[type=month]{
   padding: 5px;
   height: 35px;
-  width: 451px;
+  width: 400px;
   border: 1px solid rgba(0, 0, 0, 0.185);
   border-radius: 5px;
   cursor: pointer;
@@ -197,19 +197,28 @@ nav .profile-details .admin_name{
 
 /* table style */
 
+input:focus{
+  outline: none;
+}
+
 table { 
   border-collapse: collapse; 
   border-spacing: 0 
 } 
 
 table th{
-   padding: .5em; 
+   padding: 1em; 
    border: 1px solid #999; 
   } 
 
-  table td {
+table td {
     border: 1px solid #999; 
-   } 
+    padding: 0.5rem;
+}
+
+table tr:hover {
+  background: rgba(112, 94, 94, 0.116);
+} 
 
 table caption { 
   text-align: left 
