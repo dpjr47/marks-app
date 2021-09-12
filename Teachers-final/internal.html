@@ -63,9 +63,40 @@
     </nav>
 
     <div class="home-content">
-     <div class="dropdown-menu">
+      <div class="selection-header">
+        <p>Internal Mark Entry</p>
+      </div>
+     <div class="dropdown-menu">       
         <div class="selection">
-
+          <select name="" id="">
+            <option value=""disabled selected hidden>Select Course</option>
+            <option value="">Course 1</option>
+            <option value="">Course 2</option>
+            <option value="">Course 3</option>
+          </select>
+        </div>
+        <div class="selection">
+          <select name="" id="">
+            <option value=""disabled selected hidden>Year of Admission</option>
+            <option value="">2018</option>
+            <option value="">2019</option>
+            <option value="">2020</option>
+            <option value="">2021</option>
+          </select>
+        </div>        
+        <div class="selection" id="subject-input"> <!--Need to add autocomplete code-->
+          <input type="text" placeholder="Enter your subject/code">
+        </div>        
+        <div class="selection">
+          <select name="" id="">
+            <option value=""disabled selected hidden>Select Internal</option>
+            <option value="">Internal 1</option>
+            <option value="">Internal 2</option>
+            <option value="">Internal 3</option>
+          </select>
+        </div>
+        <div class="selection">
+          <input type="text" class="month" placeholder="Month and Year" onfocus="(this.type='month')" onblur="if(this.value==''){this.type='text'}">
         </div>
      </div>
      <div class="table-menu">

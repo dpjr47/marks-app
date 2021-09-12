@@ -6,6 +6,27 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+
+*,*:focus,*:hover{
+  outline:none;
+}
+
+/* Placeholder black */
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(0, 0, 0);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: rgb(0, 0, 0);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: rgb(0, 0, 0);
+}
+
+/* Placeholder black */
 .sidebar{
   position: fixed;
   height: 100%;
@@ -147,4 +168,32 @@ nav .profile-details .admin_name{
 
 .dropdown-menu{
   min-height: 20vh;
+}
+
+.selection{ 
+  display: inline-block;
+  padding-right: 25px;
+  margin-bottom: 25px;
+}
+
+.selection-header{
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.selection select,
+.selection input,
+.selection input[type=month]{
+  padding: 5px;
+  height: 35px;
+  width: 451px;
+  border: 1px solid rgba(0, 0, 0, 0.185);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#subject-input{
+  display: block;
 }
