@@ -141,6 +141,10 @@ nav .profile-details .admin_name{
 
 .home-section .home-content{
   position: relative;
-  padding-top: 104px;
+  padding: 100px;
+  min-height:100vh;
 }
 
+.dropdown-menu{
+  min-height: 20vh;
+}
