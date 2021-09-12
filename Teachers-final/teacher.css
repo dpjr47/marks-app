@@ -141,15 +141,16 @@
   padding: 0 15px 0 2px;
 }
 nav .greet-text{
-  font-size: large;
   text-transform: uppercase;
   display: flex;
   flex-direction: row;
-  font-size: 40px;
+  font-size: 35px;
+  font-weight: 600;
 }
 
 nav .greet-text i{
-  font-size: 65px;
+  font-size: 50px;
+  margin-right: 5px;
 }
 
 nav .profile-details .admin_name{
