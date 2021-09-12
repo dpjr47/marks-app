@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Teacher Login || Marks App || SLS CUSAT</title>
+    <link rel="stylesheet" href="admin.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details" >
+      <div class="logo-details-inner">
+        <span class="logo_name">Marks App</span>
+        <span class="logo_name" id="college-name">School of Legal studies</span>        
+      </div>      
+    </div>
+      <ul class="nav-links">
+        <li>
+          <a href="#" >
+            <i class='bx bx-grid-alt' ></i>
+            <span class="links_name">Attendance</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" >
+            <i class='bx bx-grid-alt' ></i>
+            <span class="links_name">Internals</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" >
+            <i class='bx bx-grid-alt' ></i>
+            <span class="links_name">Assignment</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="links_name">Class Participation</span>
+          </a>
+        </li>
+        
+        <li class="log_out">
+          <a href="#">
+            <i class='bx bx-log-out'></i>
+            <span class="links_name">Log out</span>
+          </a>
+        </li>
+      </ul>
+  </div>
+  <section class="home-section">
+    <nav>
+      <div class="greet-text" >        
+        <i class='bx bx-user-circle'></i>     
+        <p>Welcome Admin!</p>  
+      </div>
+      <div class="profile-details">
+        <span>Pen id: 123</span>
+        <span class="admin_name">Jishnu Jagadeesh PI</span>
+      </div>
+    </nav>
+
+    <div class="home-content">
+      <div class="selection-header">
+        <p>Bleh - kept for reference need additions</p>
+      </div>
+     <div class="dropdown-menu">       
+        <div class="selection">
+          <select name="" id="">
+            <option value=""disabled selected hidden>Select Course</option>
+            <option value="">Course 1</option>
+            <option value="">Course 2</option>
+            <option value="">Course 3</option>
+          </select>
+        </div>
+        <div class="selection">
+          <select name="" id="">
+            <option value=""disabled selected hidden>Year of Admission</option>
+            <option value="">2018</option>
+            <option value="">2019</option>
+            <option value="">2020</option>
+            <option value="">2021</option>
+          </select>
+        </div>        
+        <div class="selection" id="subject-input"> <!--Need to add autocomplete code-->
+          <input type="text" placeholder="Enter your subject/code">
+        </div>        
+        <div class="selection">
+          <select name="" id="">
+            <option value=""disabled selected hidden>Select Internal</option>
+            <option value="">Internal 1</option>
+            <option value="">Internal 2</option>
+            <option value="">Internal 3</option>
+          </select>
+        </div>
+        <div class="selection">
+          <input type="text" class="month" placeholder="Month and Year" onfocus="(this.type='month')" onblur="if(this.value==''){this.type='text'}">
+        </div>
+     </div>
+     <div class="table-menu">
+       table
+     </div>
+
+    </div>
+  </section>
+
+  
+
+</body>
+</html>
