@@ -197,14 +197,30 @@ nav .profile-details .admin_name{
 
 /* table style */
 
-input:focus{
-  outline: none;
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  column-gap: 0;
+  width: 90%;
 }
 
-table { 
+ table { 
   border-collapse: collapse; 
-  border-spacing: 0 
+  border-spacing: 0 ;
+  width: auto;
 } 
+
+table thead{
+  position: sticky;
+}
+
+tbody{
+  height: 100%;
+  overflow-y: scroll;  
+  overflow-x: hidden;
+}
 
 table th{
    padding: 1em; 
@@ -213,12 +229,16 @@ table th{
 
 table td {
     border: 1px solid #999; 
-    padding: 0.5rem;
+   text-align: center;
 }
 
 table tr:hover {
   background: rgba(112, 94, 94, 0.116);
-} 
+}
+
+table tr:focus {
+  background: rgba(112, 94, 94, 0.116);
+}
 
 table caption { 
   text-align: left 
@@ -226,13 +246,21 @@ table caption {
 
 table th { 
   text-align: left; 
-  background-color: #ccc 
+  background-color: #0A2558;
+  color:#fff; 
 }
 
 
 .tbox{
+  width: 100%;
+  height: 100%;
   box-sizing: border-box;
   border: none;
+  text-align: center;
+}
+
+.tbox :active{
+  background: rgba(112, 94, 94, 0.116);
 }
 
 .table-button{
@@ -243,4 +271,7 @@ table th {
   font-weight: 500;
   background: #0c3b92;
   cursor: pointer;
-}
+} 
+
+
+
