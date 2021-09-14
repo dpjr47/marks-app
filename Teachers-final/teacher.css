@@ -79,10 +79,12 @@
   transition: all 0.4s ease;
 }
 .sidebar .nav-links li a.active{
-  background: #081D45;
+  background: #021436;
+  border-bottom: 3px solid rgb(255, 255, 255);
+  border-top: 3px solid rgb(255, 255, 255);
 }
 .sidebar .nav-links li a:hover{
-  background: #081D45;
+  background: #021436;
 }
 .sidebar .nav-links li i{
   min-width: 60px;
@@ -249,7 +251,7 @@ table caption {
 }
 
 table th { 
-  text-align: left; 
+  text-align: center; 
   background-color: #0A2558;
   color:#fff; 
 }
@@ -286,5 +288,3 @@ input:focus{
   background: #0c3b92;
   cursor: pointer;
 } 
-
-
