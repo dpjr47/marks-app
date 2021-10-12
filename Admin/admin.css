@@ -197,3 +197,13 @@ nav .profile-details .admin_name{
   border-radius: 5px;
   cursor: pointer;
 }
+
+.table-button{
+  color: #fff;
+  padding: 0.5rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  font-weight: 500;
+  background: #0c3b92;
+  cursor: pointer;
+} 
