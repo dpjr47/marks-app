@@ -33,6 +33,7 @@
   width: 240px;
   background: #0A2558;
   transition: all 0.5s ease;
+  border-right: 1px solid #fff;
 }
 
 .sidebar .logo-details{
@@ -58,7 +59,7 @@
 
 
 .sidebar .logo-details .logo_name{
-  color: #fff;
+  color: #ffffff;
   font-size: 24px;
   font-weight: 500;
 }
@@ -79,19 +80,19 @@
   transition: all 0.4s ease;
 }
 .sidebar .nav-links li a.active{
-  background: #081D45;
+  background: #021436;
 }
 .sidebar .nav-links li a:hover{
-  background: #081D45;
+  background: #021436;
 }
 .sidebar .nav-links li i{
   min-width: 60px;
   text-align: center;
   font-size: 18px;
-  color: #fff;
+  color: #ffffff;
 }
 .sidebar .nav-links li a .links_name{
-  color: #fff;
+  color: #ffffff;
   font-size: 15px;
   font-weight: 400;
   white-space: nowrap;
@@ -114,7 +115,7 @@
   display: flex;
   justify-content: space-between;
   height: 80px;
-  background: #fff;
+  background: #0A2558;
   display: flex;
   align-items: center;
   position: fixed;
@@ -133,12 +134,13 @@
 .home-section nav .profile-details{
   display: flex;
   align-items: center;
-  background: #F5F6FA;
-  border: 2px solid #EFEEF1;
+  background: #0A2558;
+  border: 2px solid #031330;
   border-radius: 6px;
   height: 50px;
   min-width: 190px;
   padding: 0 15px 0 2px;
+  color: #fff;
 }
 nav .greet-text{
   text-transform: uppercase;
@@ -146,6 +148,7 @@ nav .greet-text{
   flex-direction: row;
   font-size: 35px;
   font-weight: 600;
+  color: #fff;
 }
 
 nav .greet-text i{
@@ -156,7 +159,7 @@ nav .greet-text i{
 nav .profile-details .admin_name{
   font-size: 15px;
   font-weight: 500;
-  color: #333;
+  color: rgb(255, 255, 255);
   margin: 0 10px;
   white-space: nowrap;
 }
@@ -189,9 +192,8 @@ nav .profile-details .admin_name{
 .selection input[type=month]{
   padding: 5px;
   height: 35px;
-  width: 451px;
+  width: 400px;
   border: 1px solid rgba(0, 0, 0, 0.185);
   border-radius: 5px;
   cursor: pointer;
 }
-

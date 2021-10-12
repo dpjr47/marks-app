@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8">
-    <title> Teacher Login || Marks App || SLS CUSAT</title>
+    <title> Admin Login || Marks App || SLS CUSAT</title>
     <link rel="stylesheet" href="admin.css">
     <!-- Boxicons CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
@@ -18,27 +18,27 @@
     </div>
       <ul class="nav-links">
         <li>
-          <a href="#" >
+          <a href="attendance.html" >
             <i class='bx bx-grid-alt' ></i>
-            <span class="links_name">Attendance</span>
+            <span class="links_name">Print Result</span>
           </a>
         </li>
         <li>
-          <a href="#" >
+          <a href="internal.html" >
             <i class='bx bx-grid-alt' ></i>
-            <span class="links_name">Internals</span>
+            <span class="links_name">Add Students</span>
           </a>
         </li>
         <li>
-          <a href="#" >
+          <a  href="#" >
             <i class='bx bx-grid-alt' ></i>
-            <span class="links_name">Assignment</span>
+            <span class="links_name">Add Teachers</span>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="classparticipation.html">
             <i class='bx bx-grid-alt' ></i>
-            <span class="links_name">Class Participation</span>
+            <span class="links_name">Transfer Certificate</span>
           </a>
         </li>
         
@@ -52,8 +52,7 @@
   </div>
   <section class="home-section">
     <nav>
-      <div class="greet-text" >        
-        <i class='bx bx-user-circle'></i>     
+      <div class="greet-text" >            
         <p>Welcome Admin!</p>  
       </div>
       <div class="profile-details">
@@ -64,9 +63,10 @@
 
     <div class="home-content">
       <div class="selection-header">
-        <p>Bleh - kept for reference need additions</p>
+        <p>Assignment Details</p>
       </div>
-     <div class="dropdown-menu">       
+     <div class="dropdown-menu">
+       <form action="">     
         <div class="selection">
           <select name="" id="">
             <option value=""disabled selected hidden>Select Course</option>
@@ -97,19 +97,17 @@
         </div>
         <div class="selection">
           <select name="" id="">
-            <option value=""disabled selected hidden>Select Internal</option>
-            <option value="">Internal 1</option>
-            <option value="">Internal 2</option>
-            <option value="">Internal 3</option>
+            <option value=""disabled selected hidden>Select Assignment</option>
+            <option value="">Written</option>
+            <option value="">Presentation</option>
           </select>
         </div>
         <div class="selection">
           <input type="text" class="month" placeholder="Month and Year" onfocus="(this.type='month')" onblur="if(this.value==''){this.type='text'}">
         </div>
+      </form>  
      </div>
-     <div class="table-menu">
-       table
-     </div>
+     
 
     </div>
   </section>
