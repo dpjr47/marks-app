@@ -1,140 +1,30 @@
-/* Googlefont Poppins CDN Link */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
-*,*:focus,*:hover{
-  outline:none;
-}
-
-/* Placeholder black */
-
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: rgb(0, 0, 0);
-  opacity: 1; /* Firefox */
-}
-
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: rgb(0, 0, 0);
-}
-
-::-ms-input-placeholder { /* Microsoft Edge */
-  color: rgb(0, 0, 0);
-}
-
-/* Placeholder black */
-.sidebar{
-  position: fixed;
-  height: 100%;
-  width: 240px;
-  background: #0A2558;
-  transition: all 0.5s ease;
-  border-right: 1px solid #fff;
-}
-
-.sidebar .logo-details{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-top: 20px;
-
-}
-
-.sidebar .logo-details .logo-details-inner{
-  display: flex;
-  flex-direction: column;  
-  text-align: center;
-  justify-content: center;
-}
-
-#college-name{
-  font-size: 15px;
-}
-
-
-
-.sidebar .logo-details .logo_name{
-  color: #ffffff;
-  font-size: 24px;
-  font-weight: 500;
-}
-.sidebar .nav-links{
-  margin-top: 50px;
-}
-.sidebar .nav-links li{
-  position: relative;
-  list-style: none;
-  height: 50px;
-}
-.sidebar .nav-links li a{
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  transition: all 0.4s ease;
-}
-.sidebar .nav-links li a.active{
-  background: #021436;
-}
-.sidebar .nav-links li a:hover{
-  background: #021436;
-}
-.sidebar .nav-links li i{
-  min-width: 60px;
-  text-align: center;
-  font-size: 18px;
-  color: #ffffff;
-}
-.sidebar .nav-links li a .links_name{
-  color: #ffffff;
-  font-size: 15px;
-  font-weight: 400;
-  white-space: nowrap;
-}
-.sidebar .nav-links .log_out{
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-.home-section{
-  position: relative;
-  background: #f5f5f5;
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body {
+  font-family: "Poppins", sans-serif;
+  background: #fafafa;
   min-height: 100vh;
-  width: calc(100% - 240px);
-  left: 240px;
-  transition: all 0.5s ease;
 }
 
-.home-section nav{
-  display: flex;
-  justify-content: space-between;
-  height: 80px;
-  background: #0A2558;
-  display: flex;
-  align-items: center;
-  position: fixed;
-  width: calc(100% - 240px);
-  left: 240px;
-  z-index: 100;
-  padding: 0 20px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  transition: all 0.5s ease;
-}
-.sidebar.active ~ .home-section nav{
-  left: 60px;
-  width: calc(100% - 60px);
+.navbar {
+  background: #0a2558 !important;
+  left: 290px;
+  right: 0;
+  position: fixed !important;
+  z-index: 2;
+  border: none;
+  border-radius: 0;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-.home-section nav .profile-details{
+#sidebarCollapse {
+  display: none;
+}
+
+.profile-details {
   display: flex;
   align-items: center;
-  background: #0A2558;
+  justify-content: center;
+  background: #0a2558;
   border: 2px solid #031330;
   border-radius: 6px;
   height: 50px;
@@ -142,7 +32,12 @@
   padding: 0 15px 0 2px;
   color: #fff;
 }
-nav .greet-text{
+
+.profileDetails {
+  display: none;
+}
+
+.greet-text {
   text-transform: uppercase;
   display: flex;
   flex-direction: row;
@@ -151,54 +46,88 @@ nav .greet-text{
   color: #fff;
 }
 
-nav .greet-text i{
-  font-size: 50px;
-  margin-right: 5px;
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+#sidebar {
+  min-width: 290px;
+  max-width: 290px;
+  position: fixed;
+  height: 100%;
+  background: #0a2558;
+  color: #fff;
+  transition: all 0.3s;
 }
 
-nav .profile-details .admin_name{
-  font-size: 15px;
-  font-weight: 500;
-  color: rgb(255, 255, 255);
-  margin: 0 10px;
-  white-space: nowrap;
+#sidebar.active {
+  margin-left: -290px;
 }
 
-.home-section .home-content{
+#sidebar .sidebar-header {
+  padding: 20px;
+  background: #0a2558;
+}
+
+#sidebar ul.components {
+  padding: 20px 0;
+}
+
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+  transition: all 0.4s ease;
+  text-decoration: none;
+  color: #fff;
+}
+
+#sidebar ul li a:hover {
+  color: #fff;
+  background: #021436;
+  text-decoration: none;
+}
+
+#sidebar ul li.active > a,
+a[aria-expanded="true"] {
+  color: #fff;
+  background: #021436;
+}
+
+#sidebar ul li i {
+  min-width: 30px;
+  text-align: center;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.log_out {
+  position: absolute;
+  bottom: 0;
+  width: 290px;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+.home-content {
+  background: #f5f5f5;
+  left: 290px;
   position: relative;
-  padding: 100px;
-  min-height:100vh;
+  padding: 80px;
+  min-height: 100vh;
+  width: calc(100% - 290px);
 }
 
-.dropdown-menu{
-  min-height: 20vh;
-}
-
-.selection{ 
-  display: inline-block;
-  padding-right: 25px;
-  margin-bottom: 25px;
-}
-
-.selection-header{
+.selection-header h4 {
   text-transform: uppercase;
   text-decoration: underline;
-  font-size: 50px;
   font-weight: 700;
 }
 
-.selection select,
-.selection input,
-.selection input[type=month]{
-  padding: 5px;
-  height: 35px;
-  width: 400px;
-  border: 1px solid rgba(0, 0, 0, 0.185);
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.table-button{
+.table-button {
   color: #fff;
   padding: 0.5rem;
   padding-top: 0.2rem;
@@ -206,4 +135,66 @@ nav .profile-details .admin_name{
   font-weight: 500;
   background: #0c3b92;
   cursor: pointer;
-} 
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+  #sidebar {
+    margin-left: -290px;
+    padding-top: 5rem;
+  }
+
+  #sidebar.active {
+    margin-left: 0;
+    min-width: -webkit-fill-available;
+    min-height: 100vh;
+  }
+
+  #content.active {
+    display: none;
+  }
+
+  .home-content {
+    left: 0;
+    width: 100vw;
+    padding-top: 85px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+  }
+
+  .navbar {
+    left: 0;
+  }
+
+  #content.active {
+    display: none;
+  }
+
+  #sidebarCollapse {
+    display: block;
+  }
+
+  .profile-details {
+    display: none;
+  }
+
+  .profileDetails {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0a2558;
+    border: 2px solid #031330;
+    height: 50px;
+    min-width: 190px;
+    padding: 0 15px 0 2px;
+    color: #fff;
+  }
+
+  .greet-text {
+    margin: auto;
+  }
+}
