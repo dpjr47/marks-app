@@ -35,7 +35,7 @@ img{
 #login-form-wrap {
     position: relative;
 	background-color: #fff;
-	width: 35%;
+	width: fit-content;
     margin: auto;
     vertical-align: middle;
 	text-align: center;

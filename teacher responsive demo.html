@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teacher Login || Marks App || SLS CUSAT</title>
+    <link rel="stylesheet" href="admin.css" />
+    <!-- Boxicons CDN Link -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Jquery CDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+    <!-- Bootstrap CDN -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+      integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Font Awesome JS -->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+      integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+      integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+      <div class="sidebar-header text-center">
+        <h3 class="font-weight-bold">Marks App</h3>
+        <h5>School Of Legal Studies</h5>
+      </div>
+      <div class="profileDetails ml-auto">
+        <span>Pen id: 123</span>
+        <span class="admin_name">Jishnu Jagadeesh PI</span>
+      </div>
+
+      <ul class="list-unstyled components">
+        <li class="active">
+          <a href="#">
+            <i class="bx bx-grid-alt"></i>
+            <span class="links_name">Attendance</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-grid-alt"></i>
+            <span class="links_name">Internals</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-grid-alt"></i>
+            <span class="links_name">Assignment</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-grid-alt"></i>
+            <span class="links_name">class Participation</span>
+          </a>
+        </li>
+        <li class="log_out">
+          <a href="#">
+            <i class="bx bx-log-out"></i>
+            <span class="links_name">Log out</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- End sidebar -->
+
+    <section class="home-section">
+      <!-- Top navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <button
+            type="button"
+            id="sidebarCollapse"
+            class="btn"
+            style="color: #0a2558; background: #fff"
+          >
+            <i class="fas fa-align-justify"></i>
+          </button>
+          <div class="greet-text">
+            <i style="line-height: unset" class="bx bx-user-circle"></i>
+            <p style="margin: 0">Welcome Teacher!</p>
+          </div>
+          <div class="profile-details ml-auto">
+            <span>Pen id: 123</span>
+            <span class="admin_name">Jishnu Jagadeesh PI</span>
+          </div>
+        </div>
+      </nav>
+      <!-- End of top navbar -->
+      <!-- Content part -->
+      <div id="content" class="home-content">
+        <div class="selection-header text-center">
+          <h4>Attendance Entry</h4>
+        </div>
+
+        <form class="drop my-4">
+          <div class="selection form-row my-2">
+            <select name="" id="" class="form-control">
+              <option value="" disabled selected hidden>Select Course</option>
+              <option value="">Course 1</option>
+              <option value="">Course 2</option>
+              <option value="">Course 3</option>
+            </select>
+          </div>
+          <div class="selection form-row my-2">
+            <select name="" id="" class="form-control">
+              <option value="" disabled selected hidden>Year of Admission</option>
+              <option value="">2018</option>
+              <option value="">2019</option>
+              <option value="">2020</option>
+              <option value="">2021</option>
+            </select>
+          </div>
+          <div class="selection form-row my-2" id="subject-input"> <!--Need to add autocomplete code-->
+            <input type="text" class="form-control" placeholder="Enter your subject/code">
+          </div>
+          <div class="selection form-row my-2">
+            <select name="" id="" class="form-control">
+              <option value="" disabled selected hidden>Select Semester</option>
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+            </select>
+          </div>
+          <div class="selection form-row my-2">
+            <select name="" id="" class="form-control">
+              <option value=""disabled selected hidden>Select Internal</option>
+              <option value="">Internal 1</option>
+              <option value="">Internal 2</option>
+              <option value="">Internal 3</option>
+            </select>
+          </div>
+          <div class="selection form-row my-2">
+            <input type="text" class="month form-control" placeholder="Month and Year" onfocus="(this.type='month')" onblur="if(this.value==''){this.type='text'}">
+          </div>
+        </form>
+
+        <form>
+          <table class="scroll">
+            <thead>
+              <tr>
+                <th>Reg.no</th>
+                <th>Name</th>
+                <th>Attendance</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Name of student</td>
+                <td style="padding: 0">
+                  <input
+                    class="tbox"
+                    type="text"
+                    placeholder="Enter Marks Here"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <br /><button class="table-button" style="align-self: center">
+            Submit
+          </button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

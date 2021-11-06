@@ -41,7 +41,7 @@ body {
   text-transform: uppercase;
   display: flex;
   flex-direction: row;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 600;
   color: #fff;
 }
@@ -149,7 +149,7 @@ a[aria-expanded="true"] {
 
   #sidebar.active {
     margin-left: 0;
-    min-width: -webkit-fill-available;
+    min-width: 100vw;
     min-height: 100vh;
   }
 
